@@ -1,0 +1,111 @@
+Student Information
+
+1. Add Student
+
+2. View Students
+
+3. Update Student
+
+4. Delete Student
+
+5. Exit
+
+Enter your choice: 1
+
+Enter student name: Alice
+
+Enter student age: 19
+
+Enter student grades : [76,77,75]
+
+Student 'Alice' added successfully.
+
+
+
+
+Student Information
+
+1. Add Student
+
+2. View Students
+
+3. Update Student
+
+4. Delete Student
+
+5. Exit
+
+Enter your choice: 2
+
+
+
+Student List:
+
+- Name: Alice, Age: 19, Grades: [76,77,75]
+
+
+
+
+Student Information
+
+1. Add Student
+
+2. View Students
+
+3. Update Student
+
+4. Delete Student
+
+5. Exit
+
+Enter your choice: 3
+
+Enter the name of the student to update: Alice
+
+Current Data: Age: 19, Grades: [76,77,75]
+
+Enter new age (or press Enter to keep current): 20
+
+Enter new grades (press Enter to keep current): [77,78,79]
+
+Student 'Alice' updated successfully.
+
+
+
+
+Student Information
+
+1. Add Student
+
+2. View Students
+
+3. Update Student
+
+4. Delete Student
+
+5. Exit
+
+Enter your choice: 4
+
+Enter the name of the student to delete: Alice 
+
+Student 'Alice ' not found.
+
+
+
+
+Student Information
+
+1. Add Student
+
+2. View Students
+
+3. Update Student
+
+4. Delete Student
+
+5. Exit
+
+Enter your choice: 5
+
+Exiting the program.
