@@ -1,0 +1,23 @@
+  **Requirements (`requirements.txt`)**
+
+This file contains the dependencies required to run the app.
+
+```text
+Flask==2.2.2
+```
+
+### Setting Up the Environment:
+
+1. Install the required Python dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Place the `app.py`, `movies.json`, and `templates/index.html` (containing your HTML code) into the appropriate directories.
+
+3. Run the Flask app:
+    ```bash
+    python app.py
+    ```
+
+This setup will run the Flask app and serve the HTML interface for the movie review database, handle filtering of movies, and allow users to submit reviews.
