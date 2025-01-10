@@ -76,8 +76,7 @@ Features 📝
 - Number of Floors
 - Number of Bathrooms 
 
-Model 🤖
-[Insert model type, e.g. Linear Regression, Decision Trees, etc.]
+Model 🤖 
 
 Requirements 📦
 - Python 3.x
@@ -90,7 +89,7 @@ Requirements 📦
 # Requirements
 
 
- # 📦 The following libraries are required:
+ 📦 The following libraries are required:
 
 - Python 3.x
 - Flask
@@ -98,5 +97,14 @@ Requirements 📦
 - scikit-learn
 - pandas
 - numpy
+
+
+# Output 📝💻📊📋
+
+Python_Task [f] - API Request Output 
+
+![output1](https://github.com/user-attachments/assets/21ac0b8e-dfb1-47bc-b7a6-c6fac03d234a)
+
+
 
 
