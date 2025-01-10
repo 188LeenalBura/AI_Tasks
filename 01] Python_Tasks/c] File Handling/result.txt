@@ -1,0 +1,1 @@
+There are 71 words in a 'script.txt' file
