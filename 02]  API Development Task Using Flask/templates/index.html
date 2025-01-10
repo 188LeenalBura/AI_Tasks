@@ -59,14 +59,9 @@
             text-align: center;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
         }
-        .movie-card img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 8px;
-        }
         .movie-card h3 {
             margin: 10px 0;
+            font-weight: bold;
         }
         .movie-card p {
             margin: 5px 0;
@@ -153,7 +148,6 @@
             actors: "Robert Downey Jr., Chris Evans",
             actress: "Scarlett Johansson",
             country: "USA",
-            image: "https://m.media-amazon.com/images/I/91GhNYB1c8L._AC_SY679_.jpg",
             reviews: []
         },
         {
@@ -165,7 +159,6 @@
             actors: "Matthew McConaughey, Anne Hathaway",
             actress: "Jessica Chastain",
             country: "USA",
-            image: "https://m.media-amazon.com/images/I/91-L1BwX0nL._AC_SY679_.jpg",
             reviews: []
         },
         {
@@ -177,7 +170,6 @@
             actors: "Bill Skarsgård, Jaeden Lieberher",
             actress: "Sophia Lillis",
             country: "USA",
-            image: "https://m.media-amazon.com/images/I/71HfiNfDF7L._AC_SY679_.jpg",
             reviews: []
         },
         {
@@ -189,7 +181,6 @@
             actors: "Daniel Radcliffe, Rupert Grint",
             actress: "Emma Watson",
             country: "UK",
-            image: "https://m.media-amazon.com/images/I/91bMdfbiQzL._AC_SY679_.jpg",
             reviews: []
         }
     ];
@@ -219,8 +210,7 @@
             const movieCard = document.createElement("div");
             movieCard.classList.add("movie-card");
             movieCard.innerHTML = `
-                <img src="${movie.image}" alt="${movie.title}">
-                <h3>${movie.title}</h3>
+                <h3><strong>${movie.title}</strong></h3>
                 <p><strong>Year:</strong> ${movie.year}</p>
                 <p><strong>IMDb:</strong> ${movie.imdb}</p>
                 <p><strong>Rating:</strong> <span class="rating">⭐ ${movie.rating}</span></p>
