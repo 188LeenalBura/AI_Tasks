@@ -19,19 +19,19 @@
 
 - 📝 Basic Arithmetic Operations: A program that takes two numbers as input from the user and performs addition, subtraction, multiplication, and division.
 
-- 
+  
 - 🔍 Palindrome Checker: A function that checks if a given string is a palindrome.
 
-- 
+  
 - 📁 File Handling: A script that reads a text file, counts the number of words, and writes the results to a new file.
 
-- 
+ 
 - 📈 Data Structures: Lists and Dictionaries: A program that stores student data (name, age, grades) in a dictionary and performs CRUD operations.
 
-- 
+  
 - 📊 Basic OOP (Object-Oriented Programming): A Student class with attributes for name, age, and grades, including methods to display details and calculate the average grade.
 
-- 
+  
 - 📡 API Request: A program that uses the requests library to fetch data from a public API (e.g. Weather API), parses and displays specific information.
 
  
