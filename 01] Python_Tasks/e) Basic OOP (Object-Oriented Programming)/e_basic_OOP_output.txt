@@ -1,0 +1,27 @@
+Name: Alice
+
+Age: 19
+
+Grades: [85, 90, 95]
+
+Average Grade: 90.0
+
+
+
+Name: Daniel
+
+Age: 21
+
+Grades: [70, 90, 45]
+
+Average Grade: 68.33333333333333
+
+
+
+Name: David
+
+Age: 20
+
+Grades: [89, 97, 78]
+
+Average Grade: 88.0
