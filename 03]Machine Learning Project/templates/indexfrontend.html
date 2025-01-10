@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #2c3e50, #16a085); /* Navy to Mint Green */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            background: #ffffff;
+            border-radius: 50px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            color: #2c3e50;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-section {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #16a085;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #16a085;
+            box-shadow: 0 0 8px rgba(22, 160, 133, 0.5);
+        }
+
+        button {
+            width: 50%;
+            background: linear-gradient(to right, #16a085, #2c3e50);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #2c3e50, #16a085);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #28a745;
+            padding: 15px;
+            background: #f0f9f5;
+            border: 2px solid #d4edda;
+            border-radius: 50px;
+            width: 100%;
+            text-align: center;
+            display: none; /* Hidden initially */
+        }
+
+        .result.error {
+            color: #dc3545;
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            display: block;
+        }
+
+        .result.success {
+            color: #28a745;
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>House Price Prediction</h2>
+        <div class="form-section">
+            <label for="location">Near Airport (0 for No, 1 for Yes):</label>
+            <input type="number" id="location" placeholder="Enter 0 or 1" required min="0" max="1">
+
+            <label for="square_feet">Square Feet:</label>
+            <input type="number" id="square_feet" placeholder="Enter square footage" required min="0">
+
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" placeholder="Enter number of bedrooms" required min="1">
+
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="number" id="bathrooms" placeholder="Enter number of bathrooms" required min="1">
+        </div>
+
+        <div class="form-section">
+            <label for="floor_number">Number of Floors:</label>
+            <input type="number" id="floor_number" placeholder="Enter floor number" required min="1">
+
+            <label for="age_of_house">Age of House (in years):</label>
+            <input type="number" id="age_of_house" placeholder="Enter age of house" min="0" required>
+
+            <label for="population_density">Population Density (per sq. km):</label>
+            <input type="number" id="population_density" placeholder="Enter population density" min="0" required>
+
+            <label for="average_income_level">Average Income Level (INR):</label>
+            <input type="number" id="average_income_level" placeholder="Enter average income level in INR" required>
+        </div>
+
+        <button onclick="makePrediction()">Predict Price</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function makePrediction() {
+            const location = parseFloat(document.getElementById('location').value);
+            const square_feet = parseFloat(document.getElementById('square_feet').value);
+            const bedrooms = parseFloat(document.getElementById('bedrooms').value);
+            const bathrooms = parseFloat(document.getElementById('bathrooms').value);
+            const floor_number = parseFloat(document.getElementById('floor_number').value);
+            const age_of_house = parseFloat(document.getElementById('age_of_house').value);
+            const population_density = parseFloat(document.getElementById('population_density').value);
+            const average_income_level = parseFloat(document.getElementById('average_income_level').value);
+
+            // Example logic for prediction
+            const price = (location * 500000) + (square_feet * 1000) + (bedrooms * 200000) + 
+                          (bathrooms * 150000) + (floor_number * 100000) - 
+                          (age_of_house * 2000) + (population_density * 50) + 
+                          (average_income_level * 0.1);
+
+            const resultDiv = document.getElementById('result');
+            if (isNaN(price)) {
+                resultDiv.innerText = `Error: Please fill all fields correctly.`;
+                resultDiv.classList.add('error');
+                resultDiv.classList.remove('success');
+            } else {
+                resultDiv.innerText = `Predicted Price: ₹${price.toFixed(2)}`;
+                resultDiv.classList.add('success');
+                resultDiv.classList.remove('error');
+            }
+            resultDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction</title>
+    <style>
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #2c3e50, #16a085); /* Navy to Mint Green */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 800px;
+            background: #ffffff;
+            border-radius: 50px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            color: #2c3e50;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .form-section {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #16a085;
+            margin-bottom: 20px;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+        }
+
+        label {
+            font-size: 1rem;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 50px;
+            font-size: 1rem;
+            transition: 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #16a085;
+            box-shadow: 0 0 8px rgba(22, 160, 133, 0.5);
+        }
+
+        button {
+            width: 50%;
+            background: linear-gradient(to right, #16a085, #2c3e50);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #2c3e50, #16a085);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .result {
+            margin-top: 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #28a745;
+            padding: 15px;
+            background: #f0f9f5;
+            border: 2px solid #d4edda;
+            border-radius: 50px;
+            width: 100%;
+            text-align: center;
+            display: none; /* Hidden initially */
+        }
+
+        .result.error {
+            color: #dc3545;
+            background: #f8d7da;
+            border: 2px solid #f5c6cb;
+            display: block;
+        }
+
+        .result.success {
+            color: #28a745;
+            background: #d4edda;
+            border: 2px solid #c3e6cb;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>House Price Prediction</h2>
+        <div class="form-section">
+            <label for="location">Near Airport (0 for No, 1 for Yes):</label>
+            <input type="number" id="location" placeholder="Enter 0 or 1" required min="0" max="1">
+
+            <label for="square_feet">Square Feet:</label>
+            <input type="number" id="square_feet" placeholder="Enter square footage" required min="0">
+
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" placeholder="Enter number of bedrooms" required min="1">
+
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="number" id="bathrooms" placeholder="Enter number of bathrooms" required min="1">
+        </div>
+
+        <div class="form-section">
+            <label for="floor_number">Number of Floors:</label>
+            <input type="number" id="floor_number" placeholder="Enter floor number" required min="1">
+
+            <label for="age_of_house">Age of House (in years):</label>
+            <input type="number" id="age_of_house" placeholder="Enter age of house" min="0" required>
+
+            <label for="population_density">Population Density (per sq. km):</label>
+            <input type="number" id="population_density" placeholder="Enter population density" min="0" required>
+
+            <label for="average_income_level">Average Income Level (INR):</label>
+            <input type="number" id="average_income_level" placeholder="Enter average income level in INR" required>
+        </div>
+
+        <button onclick="makePrediction()">Predict Price</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function makePrediction() {
+            const location = parseFloat(document.getElementById('location').value);
+            const square_feet = parseFloat(document.getElementById('square_feet').value);
+            const bedrooms = parseFloat(document.getElementById('bedrooms').value);
+            const bathrooms = parseFloat(document.getElementById('bathrooms').value);
+            const floor_number = parseFloat(document.getElementById('floor_number').value);
+            const age_of_house = parseFloat(document.getElementById('age_of_house').value);
+            const population_density = parseFloat(document.getElementById('population_density').value);
+            const average_income_level = parseFloat(document.getElementById('average_income_level').value);
+
+            // Example logic for prediction
+            const price = (location * 500000) + (square_feet * 1000) + (bedrooms * 200000) + 
+                          (bathrooms * 150000) + (floor_number * 100000) - 
+                          (age_of_house * 2000) + (population_density * 50) + 
+                          (average_income_level * 0.1);
+
+            const resultDiv = document.getElementById('result');
+            if (isNaN(price)) {
+                resultDiv.innerText = `Error: Please fill all fields correctly.`;
+                resultDiv.classList.add('error');
+                resultDiv.classList.remove('success');
+            } else {
+                resultDiv.innerText = `Predicted Price: ₹${price.toFixed(2)}`;
+                resultDiv.classList.add('success');
+                resultDiv.classList.remove('error');
+            }
+            resultDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
