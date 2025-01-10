@@ -12,8 +12,7 @@
 1. 📝 #python-tasks
 2. 📊 #api-development-task
 3. 🤖 #machine-learning-project
-4. 🚀 #getting-started
-5. 📦 #requirements
+4. 📦 #requirements
 
 # Python Tasks
 
@@ -53,31 +52,45 @@ This task involves creating a RESTful API using Flask to manage a movie review d
 *API Response 📊*
 The API responds with JSON data, including:
 
-- Movie title
+- Movie year
+- Movie genre
+- Movie country
 - Movie rating (1-5 stars)
 - Review text
 - Reviewer name
 
 
+  # House Price Prediction Model 🏠💰
 
-Machine Learning Project
+Overview 📊
+This machine learning model predicts house prices based on various features such as location, size, population density, and more.
+
+Features 📝
+- Location (near airport) 📍
+- Number of bedrooms 🛏️
+- Square feet 📏
+- Population density 👥
+- Average income 💸
+- Age of the house 🕰️
+- Extra features (pool, garden, etc.) 🏞️
+- Number of Floors
+- Number of Bathrooms 
+
+Model 🤖
+[Insert model type, e.g. Linear Regression, Decision Trees, etc.]
+
+Requirements 📦
+- Python 3.x
+- scikit-learn
+- pandas
+- numpy
 
 
-🤖 This project develops a regression model using a chosen regression algorithm (e.g., linear regression, decision tree regressor). The model is trained on a selected dataset and evaluated for performance. The trained model is then exported into Flask and served through a simple API.
 
-Getting Started
-
-
-🚀 To run the code, follow these steps:
-
-1. 📦 Clone the repository using `git clone`.
-2. 📈 Install the required libraries using `pip install -r requirements.txt`.
-3. 🚀 Run the Flask API using `flask run`.
-
-Requirements
+# Requirements
 
 
-📦 The following libraries are required:
+ # 📦 The following libraries are required:
 
 - Python 3.x
 - Flask
@@ -86,4 +99,4 @@ Requirements
 - pandas
 - numpy
 
-I hope this updated version meets your requirements!
+
