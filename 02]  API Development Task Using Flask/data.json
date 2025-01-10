@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Avengers: Endgame",
+        "genre": "action",
+        "year": "2019",
+        "rating": "4.8",
+        "imdb": "8.4",
+        "actors": "Robert Downey Jr., Chris Evans",
+        "actress": "Scarlett Johansson",
+        "country": "USA",
+        "image": "https://via.placeholder.com/240x300?text=Avengers+Endgame",
+        "reviews": []
+    },
+    {
+        "title": "The Hangover",
+        "genre": "comedy",
+        "year": "2009",
+        "rating": "4.5",
+        "imdb": "7.7",
+        "actors": "Bradley Cooper, Zach Galifianakis",
+        "actress": "Heather Graham",
+        "country": "USA",
+        "image": "https://via.placeholder.com/240x300?text=The+Hangover",
+        "reviews": []
+    }
+]
