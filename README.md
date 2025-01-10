@@ -103,7 +103,7 @@ Requirements 📦
 
 # 01) Python_Task [f] - API Request Output 
 
-![output1](https://github.com/user-attachments/assets/21ac0b8e-dfb1-47bc-b7a6-c6fac03d234a)
+![output1](https://github.com/user-attachments/assets/21ac0b8e-dfb1-47bc-b7a6-c6fac03d234a)[Image](image.jpg?s=200)
 
 
 # 02) API Development Task Using Flask Output 
