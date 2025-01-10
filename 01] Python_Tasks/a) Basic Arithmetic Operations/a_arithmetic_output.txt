@@ -1,0 +1,80 @@
+Choose an operation:
+
+1. Addition
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+Enter choice (1, 2, 3, or 4): 1
+
+Enter first number: 128
+
+Enter second number: 76
+
+The result of addition is: 204.0 
+
+
+
+Choose an operation:
+
+1. Addition
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+Enter choice (1, 2, 3, or 4): 2
+
+Enter first number: 68
+
+Enter second number: 58
+
+The result of subtraction is: 10.0
+
+
+
+
+Choose an operation:
+
+1. Addition
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+Enter choice (1, 2, 3, or 4): 3
+
+Enter first number: 100
+
+Enter second number: 15
+
+The result of multiplication is: 1500.0
+
+
+
+
+
+Choose an operation:
+
+1. Addition
+
+2. Subtraction
+
+3. Multiplication
+
+4. Division
+
+Enter choice (1, 2, 3, or 4): 4
+
+Enter first number: 164
+
+Enter second number: 4
+
+The result of division is: 41.0
