@@ -101,10 +101,18 @@ Requirements 📦
 
 # Output 📝💻📊📋
 
-Python_Task [f] - API Request Output 
+# 01) Python_Task [f] - API Request Output 
 
 ![output1](https://github.com/user-attachments/assets/21ac0b8e-dfb1-47bc-b7a6-c6fac03d234a)
 
 
+# 02) API Development Task Using Flask Output 
+
+
+![Output2](https://github.com/user-attachments/assets/6330b57d-cac5-4df8-a3a9-6f7d8f8a453c)
+
+# 03) Machine Learning Prediction Output 
+
+![Output4](https://github.com/user-attachments/assets/9d266bd9-4299-4d6e-88af-dbfc84aa21c2)
 
 
