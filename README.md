@@ -1,4 +1,4 @@
-# AI_Tasks
+9# AI_Tasks
 
 # 🚀🔥 Python, AI and Machine Learning Project
 
@@ -113,7 +113,8 @@ Requirements 📦
 # 02) API Development Task Using Flask Output 
 
 
-![Output2](https://github.com/user-attachments/assets/6330b57d-cac5-4df8-a3a9-6f7d8f8a453c)
+![Output4 (1)](https://github.com/user-attachments/assets/3ea71f3f-529f-4013-85cb-c2367bcbec00)
+
 
 # 03) Machine Learning Prediction Output 
 
