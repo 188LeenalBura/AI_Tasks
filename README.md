@@ -104,8 +104,9 @@ Requirements 📦
 # 01) Python_Task [f] - API Request Output 
 
 
+![output1_11zon_11zon](https://github.com/user-attachments/assets/20e0c450-d30c-44c9-83f4-5f78f2a6cdea=200×100)
 
-![output1_11zon_11zon](https://github.com/user-attachments/assets/5e6eb3ef-95dd-45a1-a94b-0c1507b635d3.jpg=200×100)
+
 
 
 
