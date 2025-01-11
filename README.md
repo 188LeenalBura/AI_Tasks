@@ -1,4 +1,4 @@
-o9# AI_Tasks
+io9# AI_Tasks
 
 # 🚀🔥 Python, AI and Machine Learning Project
 
@@ -104,7 +104,8 @@ Requirements 📦
 # 01) Python_Task [f] - API Request Output 
 
 
-![output1_11zon](https://github.com/user-attachments/assets/065513b7-2fdd-4d48-9138-4d36d7f01019)
+
+![output1_11zon_11zon](https://github.com/user-attachments/assets/5e6eb3ef-95dd-45a1-a94b-0c1507b635d3)
 
 
 
