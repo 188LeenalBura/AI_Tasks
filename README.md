@@ -1,4 +1,4 @@
-9# AI_Tasks
+o9# AI_Tasks
 
 # 🚀🔥 Python, AI and Machine Learning Project
 
@@ -103,7 +103,9 @@ Requirements 📦
 
 # 01) Python_Task [f] - API Request Output 
 
-![jpeg-optimizer_output1](https://github.com/user-attachments/assets/e43a9249-860f-4976-aaa0-9d0466047b7e)
+
+![output1_11zon](https://github.com/user-attachments/assets/065513b7-2fdd-4d48-9138-4d36d7f01019)
+
 
 
 
