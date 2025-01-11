@@ -1,4 +1,4 @@
-io9# AI_Tasks
+# AI_Tasks
 
 # 🚀🔥 Python, AI and Machine Learning Project
 
