@@ -105,7 +105,7 @@ Requirements 📦
 
 
 
-![output1_11zon_11zon](https://github.com/user-attachments/assets/5e6eb3ef-95dd-45a1-a94b-0c1507b635d3)
+![output1_11zon_11zon](https://github.com/user-attachments/assets/5e6eb3ef-95dd-45a1-a94b-0c1507b635d3.jpg=200×100)
 
 
 
