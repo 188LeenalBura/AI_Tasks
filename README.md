@@ -103,7 +103,8 @@ Requirements 📦
 
 # 01) Python_Task [f] - API Request Output 
 
-![output1 (1)](https://github.com/user-attachments/assets/8351cedf-60a0-4b26-9f1d-be6583ecfcc4)
+![jpeg-optimizer_output1](https://github.com/user-attachments/assets/e43a9249-860f-4976-aaa0-9d0466047b7e)
+
 
 
 
