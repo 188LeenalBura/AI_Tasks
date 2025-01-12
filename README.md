@@ -104,7 +104,8 @@ Requirements 📦
 # 01) Python_Task [f] - API Request Output 
 
 
-![output1](https://github.com/user-attachments/assets/a096dceb-9061-4a38-93e1-2eaa5a1377c1)
+![output1](https://github.com/user-attachments/assets/1db0d0fd-e198-4109-9e55-72107cff954d)
+
 
 
 
